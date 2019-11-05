@@ -1,0 +1,66 @@
+/* https://www.w3schools.com/howto/howto_js_slideshow.asp */
+html{
+    scroll-behavior: smooth;
+}
+body{
+  font-family: Open Sans, sans-serif;
+}
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 50px 0;
+  text-align: center;
+}
+h2{
+  font-size: 32px;
+  line-height: 1.5;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  padding-right: 20px;
+  display: inline;
+  /*Your code here */
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  /*Your code here - remove the underline*/
+}
+nav a:hover{
+  text-decoration: underline;
+  /*Your code here - add the underline*/
+}
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+.skip{
+  overflow: hidden;
+}
+.skip a:focus{
+  top: 0px;
+}
+/*Your code here*/
+*:focus{
+  border: 2px solid black;
+  outline: none;
+}
+footer{
+  background-color: black;
+  color: white;
+  grid-column: 1 / -1;
+  grid-row: 7 / span 1;
+  padding-top: 30px;
+  text-align: center;
+}
+@media screen and (min-width:800px)/*Your code here - Add the first media query.*/{
