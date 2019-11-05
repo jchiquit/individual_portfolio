@@ -3,23 +3,54 @@ html{
 }
 body{
   font-family: Open Sans, sans-serif;
+  background-color: #e4f2f0;
 }
 .container{
   display: grid;
-  padding-bottom: 60px;
+  padding-bottom:80px;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
 }
 h1{
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1;
   padding: 30px 0;
   text-align: center;
 }
 h2{
-  font-size: 32px;
+  font-size: 30px;
   line-height: 1;
+  text-align: center;
+  padding: 25px 50px;
+}
+p{
+  text-align: center;
+  padding: 10px 10px;
+
+}
+.home-text{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+.home-image{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
+  overflow: hidden;
+  opacity: 0.5;
+  position: relative;
+  text-align: center;
 }
 nav{
   text-align: center;
+  padding: 15px 5px;
+  background-color: #99d8d0;
 }
 nav ul{
   list-style-type: none;
