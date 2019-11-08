@@ -1,0 +1,160 @@
+html{
+    scroll-behavior: smooth;
+    height: 100%;
+}
+body{
+  font-family: Open Sans, sans-serif;
+  background-color: #e4f2f0;
+  height: 100%;
+
+}
+.container{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr ;
+}
+
+.philosophy{
+  background-image: url("../images/whiteboard.png");
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.philosophy h2{
+  padding-top: 175px;
+  height: 25px;
+}
+.philosophy p{
+  padding: 10px 10px;
+  height: 250px;
+  text-align: center;
+  color: black;
+}
+h1{
+  font-size: 50px;
+  line-height: 1;
+  padding: 30px 0;
+  text-align: center;
+}
+h2{
+  font-weight: bold;
+  font-size: 35px;
+  text-align: center;
+  padding: 20px 10px 25px;
+  position: relative;
+  color: #170a19;
+}
+.philosophy-text-block p{
+  padding: 10px;
+  color: black;
+  font-size: 12pt;
+
+
+}
+nav{
+  text-align: center;
+  padding: 5px 5px;
+  background-color: #e4f2f0;
+}
+nav ul{
+  list-style-type: none;
+}
+nav li{
+  padding-right: 5px;
+  display: inline;
+}
+nav a{
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+nav a:hover{
+  text-decoration: underline;
+}
+.skip a{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+.skip{
+  overflow: hidden;
+}
+.skip a:focus{
+  top: 0px;
+}
+*:focus{
+  border: 2px solid black;
+  outline: none;
+}
+footer{
+  background-color: black;
+  color: white;
+  bottom: 0;
+  left:0;
+  width:100%;
+  text-align: center;
+  position: fixed;
+}
+@media screen and (min-width:800px){
+  .container{
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr 1fr;
+    grid-template-rows: 75px 100px;
+    }
+  .about-monica{
+    grid-column: 1;
+    padding: 10px;
+  }
+  .about-text-block{
+    grid-column: 2/-1;
+    padding-top: 15px;
+    padding-bottom: 100px;
+  }
+  header{
+    grid-column: 1/-1;
+    height: 0px;
+  }
+  nav li{
+    padding: 20px;
+  }
+  .nav{
+    font-size: 15px;
+    text-align: left;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  h1{
+    text-align: left;
+    font-size: 30px;
+    padding: 20px;
+  }
+  h2{
+    font-size: 45px;
+    grid-column: -1/1;
+  }
+  p{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 85px;
+  }
+  img{
+
+    max-height: 90%;
+    width: auto;
+    grid-column: 1/3;
+    grid-row: 2/-1;
+    margin-left: 25px;
+    margin-bottom: 75px;
+    margin: auto;
+  }
