@@ -20,7 +20,7 @@ body{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
 }
 .philosophy h2{
@@ -52,12 +52,11 @@ h2{
   color: black;
   font-size: 12pt;
 
-
 }
 nav{
   text-align: center;
   padding: 5px 5px;
-  background-color: #e4f2f0;
+background-color: #99d8d0;
 }
 nav ul{
   list-style-type: none;
