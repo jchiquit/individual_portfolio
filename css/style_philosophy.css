@@ -21,6 +21,7 @@ body{
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  width: auto;
 }
 .philosophy p{
   padding: 10px 10px;
