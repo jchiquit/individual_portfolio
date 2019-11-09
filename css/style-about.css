@@ -6,6 +6,14 @@ body{
   background-color: #e4f2f0;
 
 }
+.about-text-block p{
+  padding-top: 10px;
+  color: white;
+  font-size: 12pt;
+  margin-left: 15px;
+  margin-right: 15px;
+  text-indent: 25px;
+}
 .container{
   display: grid;
   grid-template-columns: 1fr;
@@ -40,15 +48,7 @@ h2{
   background-color: #170a19;
 
 }
-p{
-  padding-top: 10px;
-  color: white;
-  font-size: 12pt;
-  margin-left: 15px;
-  margin-right: 15px;
-  text-indent: 25px;
 
-}
 nav{
   text-align: center;
   padding: 5px 5px;
@@ -98,6 +98,10 @@ footer{
   text-align: center;
   position: fixed;
 }
+.footer p{
+  font-size: 12pt;
+  padding: 0px;
+}
 @media screen and (min-width:800px){
   .container{
     display: grid;
@@ -111,7 +115,7 @@ footer{
   .about-text-block{
     grid-column: 2/-1;
     padding-top: 15px;
-    padding-bottom: 100px;
+    padding-bottom: 105px;
   }
   header{
     grid-column: 1/-1;
@@ -138,13 +142,17 @@ footer{
     font-size: 45px;
     grid-column: -1/1;
   }
-  p{
+  .about-text-block p{
     font-size: 18px;
     margin-left: 15px;
     margin-right: 85px;
   }
-  img{
+  .footer p{
+    font-size: 12pt;
+    padding-top: 0px;
 
+  }
+  img{
     max-height: 90%;
     width: auto;
     grid-column: 1/3;
