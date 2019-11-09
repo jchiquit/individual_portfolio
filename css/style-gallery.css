@@ -30,6 +30,10 @@ h1{
     background-repeat: no-repeat;
     min-height: 100%;
 
+    padding-bottom: 50px;
+    padding-top: 100px;
+
+
   }
 .gallery h2{
   font-weight: bold;
@@ -48,6 +52,15 @@ h2{
   padding: 20px 10px 25px;
   position: relative;
   height: 20px;
+}
+h3{
+  padding: 10px;
+  text-align: center;
+  font-size: 14pt;
+  font-weight: 900;
+  letter-spacing: .2em;
+  background-color: #170a19;
+  color: #e4f2f0;
 }
 nav{
   text-align: center;
