@@ -166,7 +166,8 @@ footer{
   }
   .philosophy{
   background-image: url("../images/whiteboard.png");
-  min-height: 100%;
+  min-width: 100%;
+  height:auto;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
