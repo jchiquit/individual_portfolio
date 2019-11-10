@@ -16,11 +16,12 @@ body{
 
 .philosophy{
   background-image: url("../images/whiteboard.png");
-  min-height: 100%;
+  width: 100vw;
+  height: 100vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: 100%;
 
 
 }
