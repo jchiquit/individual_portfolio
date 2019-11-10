@@ -26,7 +26,7 @@ h2{
 .purpleText{
   color:#70416d;
 }
-p{
+.home-text p{
   text-align: center;
   position: relative;
 
@@ -52,15 +52,19 @@ nav{
 nav ul{
   list-style-type: none;
 }
+nav li:first-child{
+  background-color: #99d8d0;;
+}
 nav li{
   padding: 5px;
-  display: inline;
+  display: inline-block;
 
 }
 nav a{
   color: black;
   font-weight: bold;
   text-decoration: none;
+  padding: 5px;
 }
 nav a:hover{
   text-decoration: underline;
