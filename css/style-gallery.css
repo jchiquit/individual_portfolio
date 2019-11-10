@@ -13,8 +13,7 @@ body{
   grid-template-rows: 1fr ;
 }
 img{
-
-  width: 100%;
+  max-width: 100%;
   object-fit: contain;
 }
 h1{
@@ -30,7 +29,8 @@ h1{
     background-repeat: no-repeat;
     min-height: 100%;
     padding-bottom: 50px;
-    padding-top: 100px;
+    padding-top: 50px;
+    background-size: cover;
 
 
   }
