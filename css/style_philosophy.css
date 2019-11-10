@@ -1,11 +1,11 @@
 html{
     scroll-behavior: smooth;
-    min-width: 100%;
+    max-width: 100%;
 }
 body{
   font-family: Open Sans, sans-serif;
   background-color: #e4f2f0;
-  min-width: 100%;
+  max-width: 100%;
 
 }
 .container{
