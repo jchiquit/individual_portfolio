@@ -44,7 +44,7 @@ h2{
   position: relative;
   padding-top: 175px;
   height: 25px;
-  
+
 }
 .edu-philosophy-text-block h3{
   padding: 10px;
@@ -164,6 +164,14 @@ footer{
     justify-content: space-between;
 
   }
+  .philosophy{
+  background-image: url("../images/whiteboard.png");
+  min-height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   h1{
     text-align: left;
     font-size: 30px;
