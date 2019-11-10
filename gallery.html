@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="css/style-gallery.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Parisienne">
    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
  </head>
  <body>
     <div class="skip"><a href="#main">Skip to Main Content</a></div>
@@ -22,7 +24,8 @@
           <li><a href="about.html">About Me</a></li>
           <li><a href="philosophy.html">Philosophy</a></li>
           <li><a href="gallery.html">Gallery</a></li>
-          <li><a href="goals.html">Goals</a></li>
+          <li><a href="sorority.html">Sorority</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
           <li><a href="resume/resume_template_placeholder.pdf">Resume</a></li>
         </ul>
       </nav>
@@ -31,19 +34,61 @@
     <div class="gallery">
       <h2>Gallery</h2>
     </div>
-      <div class="gallery_school">
-        <h3>Teacher</h3>
-        <img src="images/w19.jpeg" alt="Monica as a student teacher Spring 2019">
-        <img src="images/classroom.jpg" alt="Monica's second grade classroom.">
-        <img src="images/classroom_2.jpg" alt="Monica's second grade classroom before class comes in.">
-        <img src="images/memory_message.jpg" alt="Rug area of Monica's second grade classroom with that day's memory message on the board.">
+      <div class="flip_card">
+        <h3>Graduation to Teacher</h3>
+      <div class="card-container">
+          <div class="card">
+                <div class="front">
+                  <img src="images/student_teacher.JPG" alt="Monica as a student teacher Spring 2019">
+                </div>
+                <div class="back">
+                  <h3>___</h3>
+                  <p> This is the last class I student taught for my senior year of college at the University of Illinois Urbana-Champagne
+                </div>
+          </div>
+          </div>
       </div>
-      <div class="gallery_family">
-        <h3>Graduation</h3>
-        <img src="images/in_gown.jpg" alt="Monica in her graduation gown.">
-        <img src="images/parents_siblings.jpg" alt="Monica with her parents and siblings on her graduation day.">
-        <img src="images/with_jc_family.JPG" alt="Moinca with Joe's family.">
-        <img src="images/grad_cap.png" alt="The back of Monica's graduation cap.">
+      <div class="all_pics">
+      <div class="block_gallery">
+      <div class="school_grad_gallery">
+        <img src="images/grad_cap.png" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      </div>
+      <div class="block_gallery">
+      <div class="school_grad_gallery">
+        <img src="images/grad_parents.jpg" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      <div class="block_gallery">
+      <div class="school_grad_gallery">
+        <img src="images/with_jc_family.JPG" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      <div class="block_gallery">
+      <div class="school_grad_gallery">
+        <img src="images/parents_siblings.jpg" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      <div class="school_grad_gallery">
+        <img src="images/in_gown.jpg" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      <div class="school_grad_gallery">
+        <img src="images/grad_pic.jpg" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      <div class="school_grad_gallery">
+        <img src="images/grad_w_parents.jpg" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      <div class="school_grad_gallery">
+        <img src="images/alpha.JPG" alt="Monica as a student teacher Spring 2019">
+        <div class="desc">There is a tradition to decorate your graduaion cap, and this is my teacher themed cap"</div>
+      </div>
+      </div>
+      </div>
+      </div>
       </div>
       </main>
       <footer>
@@ -51,5 +96,14 @@
           &copy; Jasmine Chiquito - Web Design 2019-2020</p>
       </footer>
     </div>
+    <script>
+      var card = document.querySelector('.card');
+      card.addEventListener( 'click', function() {
+        card.classList.toggle('is-flipped');
+      });
+    </script>
+    <script>
+
+    </script>
   </body>
 </html>
