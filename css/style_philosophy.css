@@ -20,7 +20,7 @@ body{
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
 
 }
@@ -164,15 +164,7 @@ footer{
     justify-content: space-between;
 
   }
-  .philosophy{
-  background-image: url("../images/whiteboard.png");
-  min-width: 100%;
-  height:auto;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
   h1{
     text-align: left;
     font-size: 30px;
