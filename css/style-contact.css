@@ -14,11 +14,19 @@ body{
   grid-template-rows: 1fr ;
 }
 h1{
+  animation-name: text-color;
+  animation-duration: 4s;
   font-size: 50px;
   line-height: 1;
   padding: 30px 0;
   text-align: center;
+  color: #170a19;
 }
+@keyframes text-color {
+  from {color: #e4f2f0;}
+  to {color: #170a19;}
+}
+
 
 legend{
   font-size: 35px;
@@ -163,4 +171,24 @@ footer{
   h2{
     font-size: 45px;
 
+  }
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: default;
+      transition: default;
+      z-index: 1;
+    }
+
+    .skip a:focus{
+      top:0;
+    }
   }

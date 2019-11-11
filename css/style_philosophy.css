@@ -32,11 +32,19 @@ body{
 
 }
 h1{
+  animation-name: text-color;
+  animation-duration: 4s;
   font-size: 50px;
   line-height: 1;
   padding: 30px 0;
   text-align: center;
+  color: #70416d;
 }
+@keyframes text-color {
+  from {color: #e4f2f0;}
+  to {color: #70416d;}
+}
+
 h2{
   font-weight: bold;
   font-size: 35px;
@@ -183,4 +191,43 @@ footer{
 .edu-philosophy-text-block, .per-philosophy-text-block{
   width:100%;
   padding-bottom: 40px;
+}
+@media screen and (min-width:767px){
+
+  .container_top{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .container_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+
+  main{
+    height: 0px;
+  }
+  h2{
+    font-size: 45px;
+}
+@media screen and (prefers-reduced-motion: reduce){
+  html{
+      scroll-behavior: auto;
+  }
+
+  .skip a{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -40px;
+    -webkit-transition: default;
+    transition: default;
+    z-index: 1;
+  }
+
+  .skip a:focus{
+    top:0;
+  }
 }

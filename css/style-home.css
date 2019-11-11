@@ -2,7 +2,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-  font-family: Open Sans, sans-serif;
+  font-family: Lato, sans-serif;
   background-color: #e4f2f0;
 
 }
@@ -11,12 +11,21 @@ body{
   grid-template-columns: 1fr;
   grid-template-rows: 1fr ;
 }
-h1{
-  font-size: 50px;
-  line-height: 1;
-  padding: 30px 0;
-  text-align: center;
-}
+
+  h1{
+    animation-name: text-color;
+    animation-duration: 4s;
+    font-size: 50px;
+    line-height: 1;
+    padding: 30px 0;
+    text-align: center;
+    color: #170a19;
+  }
+  @keyframes text-color {
+    from {color: #e4f2f0;}
+    to {color: #170a19;}
+  }
+
 h2{
   font-size: 35px;
   text-align: center;
@@ -24,7 +33,13 @@ h2{
   position: relative;
 }
 .purpleText{
-  color:#70416d;
+  animation-name: welcome-color;
+  animation-duration: 4s;
+  color: #170a19;
+}
+@keyframes welcome-color {
+  from {color: #e4f2f0;}
+  to {color: #170a19;}
 }
 .home-text p{
   text-align: center;
@@ -147,8 +162,29 @@ footer{
     margin-left: 100px;
     margin-right: 100px;
   }
-  p{
-    font-size: 30px;
-    margin-left: 50px;
-    margin-right: 50px;
+
+  .footer p{
+    font-size: 12pt;
+    padding-top: 0px;
+
+  }
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; /* Removes scroll animation */
+    }
+
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: default; 
+      transition: default;
+      z-index: 1;
+    }
+
+    .skip a:focus{
+      top:0;
+    }
   }
