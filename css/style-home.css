@@ -168,6 +168,26 @@ footer{
     padding-top: 0px;
 
   }
+  @media screen and (min-width:767px){
+    .container{
+      display: flex;
+      flex-direction: column;
+    }
+    .home{
+        grid-row: auto;
+    }
+    .footer p{
+      font-size: 12pt;
+      padding-top: 0px;
+
+    }
+    .home{
+      min-height: 600px;
+    }
+    nav li{
+      display: inline-block;
+    }
+  }
   @media screen and (prefers-reduced-motion: reduce){
     html{
         scroll-behavior: auto; /* Removes scroll animation */
@@ -179,7 +199,7 @@ footer{
       padding: 6px;
       position: absolute;
       top: -40px;
-      -webkit-transition: default; 
+      -webkit-transition: default;
       transition: default;
       z-index: 1;
     }

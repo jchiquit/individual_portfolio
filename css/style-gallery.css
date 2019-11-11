@@ -246,3 +246,39 @@ footer{
   .school_grad_gallery:hover img{
     filter: grayscale(0%);
   }
+  @media screen and (min-width:767px){
+    .container{
+      display: flex;
+      flex-direction: column;
+
+  }
+  nav li{
+    display: inline-block;
+  }
+  .image_container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+
+  }}
+  @media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto;
+    }
+
+    .skip a{
+      background: white;
+      left: 0;
+      padding: 6px;
+      position: absolute;
+      top: -40px;
+      -webkit-transition: default;
+      transition: default;
+      z-index: 1;
+    }
+
+    .skip a:focus{
+      top:0;
+    }
+  }

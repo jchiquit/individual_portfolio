@@ -196,6 +196,31 @@ footer{
   padding-bottom: 40px;
   width:100%;
 }
+@media screen and (min-width:800px){
+  .container{
+    display: flex;
+    flex-direction: column;
+  }
+  .about-text-block p{
+    font-size: 18px;
+    margin-left: 15px;
+    margin-right: 85px;
+  }
+  .footer p{
+    font-size: 12pt;
+    padding-top: 0px;
+
+  }
+  .container_bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+.philanthropy, .scholarship{
+  padding-bottom: 40px;
+  width:100%;
+}
+}
 @media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto;
