@@ -234,7 +234,6 @@ footer{
     padding: 250px;
   }
   .school_grad_gallery img{
-
     filter: grayscale(100%);
     transition: .3s ease-in-out;
   }
