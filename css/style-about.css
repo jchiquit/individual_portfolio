@@ -109,26 +109,27 @@ footer{
 }
 @media screen and (min-width:800px){
   .container{
-    display: grid;
-    grid-template-columns: 500px 1fr 1fr 1fr;
-    grid-template-rows: 75px 100px;
-    }
-  .about-monica{
-    grid-column: 1;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
   }
-  .about-text-block{
-    grid-column: 2/-1;
-    padding-top: 15px;
-    padding-bottom: 105px;
-  }
-  header{
-    grid-column: 1/-1;
-    height: 0px;
+  .container_top{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
   }
 
+  header{
+    margin-left: 2.3em;
+  }
+  main{
+    height: 0px;
+  }
+  nav{
+    align-self: center;
+    margin: 0 0.8em 0 0;
+  }
   nav li{
-    padding: 20px;
+    display: inline-block;
   }
   .nav{
     font-size: 15px;
@@ -146,7 +147,7 @@ footer{
   }
   h2{
     font-size: 45px;
-    grid-column: -1/1;
+
   }
   .about-text-block p{
     font-size: 18px;
